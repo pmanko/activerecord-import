@@ -2,26 +2,19 @@ version = File.read(File.expand_path("../VERSION",__FILE__)).strip
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'rails'
+  s.name        = 'activerecord-import'
   s.version     = version
-  s.summary     = 'Full-stack web application framework.'
-  s.description = 'Ruby on Rails is a full-stack web framework optimized for programmer happiness and sustainable productivity. It encourages beautiful code by favoring convention over configuration.'
+  s.summary     = 'Oracle fix for activerecord-import'
+  s.description = 'See summary.'
 
   s.required_ruby_version     = '>= 1.8.7'
   s.required_rubygems_version = ">= 1.3.6"
 
-  s.author            = 'David Heinemeier Hansson'
-  s.email             = 'david@loudthinking.com'
-  s.homepage          = 'http://www.rubyonrails.org'
+  s.author            = 'Piotr Mankowski'
 
   s.bindir             = 'bin'
   s.executables        = []
 
-  s.add_dependency('activesupport',  version)
-  s.add_dependency('actionpack',     version)
-  s.add_dependency('activerecord',   version)
-  s.add_dependency('activeresource', version)
-  s.add_dependency('actionmailer',   version)
-  s.add_dependency('railties',       version)
+  s.add_dependency('activerecord',   '~> 3.0pre')
   s.add_dependency('bundler',        '~> 1.0')
 end
