@@ -1,7 +1,9 @@
+version = File.read(File.expand_path("../VERSION",__FILE__)).strip
+
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'activerecord-import'
-  s.version     = '1.0.0'
+  s.version     = version
   s.summary     = 'Oracle fix for activerecord import'
   s.description = 'See Summary'
 
